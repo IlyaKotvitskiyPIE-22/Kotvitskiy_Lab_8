@@ -4,178 +4,21 @@
   <title>Gamebar</title>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <style>
-    /* Стили для навигационного меню */
-    h1{
-      text-align: center;
-      color: rgb(255, 255, 255);
-    }
-
-    p{
-      font-family: Arial, sans-serif;
-      color: rgb(255, 255, 255)
-    }
-
-    body {
-      margin: 0;
-      font-family: Arial, sans-serif;
-      background-color: rgb(20, 21, 22);
-    }
-
-    .navbar {
-      overflow: hidden;
-      background-color: rgb(20, 21, 22); 
-    }
-    
-    .navbar a {
-      float: left;
-      display: block;
-      color: white;
-      text-align: center;
-      padding: 1% 5%;
-      text-decoration: none;
-      border-radius: 4px;
-    }
-    
-    .navbar a:hover {
-      background-color: rgb(221, 221, 221);
-      color: black;
-    }
-    
-    .dropdown {
-      float: left;
-      overflow: hidden;
-    }
-    
-    .dropdown .dropbtn {
-      font-size: 16px;  
-      border: none;
-      outline: none;
-      color: white;
-      padding: 14px 16px;
-      background-color: inherit;
-      font-family: inherit;
-      margin: 0;
-    }
-    
-    .navbar a, .dropdown .dropbtn {
-      display: inline-block;
-    }
-    
-    .dropdown-content {
-      display: none;
-      position: absolute;
-      background-color: #f9f9f9;
-      min-width: 160px;
-      box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
-      z-index: 1;
-    }
-    
-    .dropdown-content a {
-      float: none;
-      color: black;
-      padding: 12px 16px;
-      text-decoration: none;
-      display: block;
-      text-align: left;
-    }
-    
-    .dropdown-content a:hover {
-      background-color: #ddd;
-    }
-    
-    .dropdown:hover .dropdown-content {
-      display: block;
-    }
-
-    .navbarbutton {
-    background-color: rgb(20, 21, 22); 
-    border: none;
-    color: white;
-    padding: 10px 15px;
-    text-align: center;
-    text-decoration: none;
-    display: inline-block;
-    font-size: 20px;
-    margin: 10px 20px;
-    -webkit-transition-duration: 0.4s; 
-    transition-duration: 0.4s;
-    cursor: pointer;
-    border-radius: 90px;
-    position: relative;
-    }
-
-    .navbarbutton_new:hover {
-    background-color: #ffffff;
-    color: rgb(0, 0, 0);
-    }
-
-    .background_filed {
-    border-radius: 25px;
-    background: rgb(51, 51, 51);
-    padding: 25px; 
-    width: 30%;
-    height: 700px;  
-    position: absolute;
-    }
-
-    .background_filed_right {
-    border-radius: 25px;
-    background: rgb(51, 51, 51);
-    padding: 25px; 
-    width: 60%;
-    height: 700px;  
-    position: absolute;
-    left: 35%;
-    }
-
-    .search-icon {
-      float: right; 
-    }
-
-    .search-img {
-      width: 32px; 
-      height: 32px;
-    }
-
-    .mainbutton{
-      font-size: 20px; 
-      margin: 10px 4px;
-      font-weight: bold
-    }
-
-    .button {
-    background-color: rgb(20, 21, 22); 
-    border: none;
-    color: white;
-    padding: 5% 20%;
-    text-align: center;
-    text-decoration: none;
-    display: inline-block;
-    font-size: 16px;
-    margin: 20px 40px;
-    -webkit-transition-duration: 0.4s; 
-    transition-duration: 0.4s;
-    cursor: pointer;
-    border-radius: 10px;
-    position: relative;
-    }
-
-    .button_new:hover {
-    background-color: #ffffff;
-    color: rgb(0, 0, 0);
-    }
-
-    .container{
-      position: relative;
-    }
-
-  </style>
+  <link rel = "stylesheet" href = "index.css">
 </head>
 <body>
 
 <div class="navbar">
-  <a href="s1.html" class="mainbutton">GB</a>
+  <a href="index.html" class="mainbutton">GB</a>
+  <div class="dropdown">
+    <div class = "navbar_menu navbar_menu_new">≡</div>
+    <div class="dropdown-content">
+      <a href="#">НОВИНКИ</a>
+      <a href="#">СКИДКИ</a>
+      <a href="#">ФОРУМ</a>
+      <a href="#">ИГРЫ</a>
+    </div>
+  </div>
   <div class="dropdown">
     <button class="navbarbutton navbarbutton_new">НОВИНКИ</button>
   </div>
@@ -203,32 +46,69 @@
 </div>
 
 <img src="images/Witcher.jpg" alt="Witcher" style="width: 100%; height: 100%;">
-<h1>Последние новости</h1>
+<div class="content"></div>
 <div class="container">
   <div class="background_filed">
     <h1>Меню</h1>
+    <div class="hl"></div>
     <div>
       <button class="button button_new">Недавно вышло</button>
     </div>
+    <div class="hl"></div>
     <div>
       <button class="button button_new"> Новые статьи </button>
     </div>
+    <div class="hl"></div>
     <div>
       <button class="button button_new">Сплетни с Reddit</button>
     </div>
+    <div class="hl"></div>
     <div>
       <button class="button button_new">Пиратская бухта</button>
     </div>
+    <div class="hl"></div>
     <div>
       <button class="button button_new">Мерч GameBar</button>
     </div>
   </div>  
   <div class="background_filed_right">
-    <h1>Состоялся релиз GTA6!</h1>
-    <img src="https://vkplay.ru/hotbox/content_files/Stories/2023/12/05/8281236809354341ab423e2069221aef.jpg" alt="GTA^6" style = "margin: 1% 25%; width: 55%; height: 40%; border-radius: 4px;">
-    <p>Несмотря на неточность даты выхода GTA VI, в конце первого трейлера компания Rockstar Games опубликовала информацию, что релиз игры состоится в 2025 году. Возможно, GTA VI выйдет в свет на консолях осенью 2025 года, так как именно этот сезон является самым популярным у игровых разработчиков.</p>
-  </div>  
+    <h2>Последние новости</h2>
+
+    <h3>Спустя 10 лет.</h3>
+    <div class="section_block">
+      <hr>
+    <img src= "images/gta.jpg" alt="GTA6" class = "images">
+    <img src= "images/gta.jpg" alt="GTA6" class = "images_1024">
+    <img src= "images/gta.jpg" alt="GTA6" class = "images_600">
+    <p style = "margin: 1% 1%">Grand Theft Auto VI — предстоящая компьютерная игра в жанре action-adventure с открытым миром, разрабатываемая компанией Rockstar Games. 
+      Станет шестнадцатой игрой в серии Grand Theft Auto. 
+      После нескольких лет спекуляций и слухов компания Rockstar подтвердила разработку игры в феврале 2022 года.</p>
+    </div>
+    
+    <h3>Бобби Котик уйдёт из Activision Blizzard уже 29 декабря</h3>
+    <div class="section_block">
+      <hr>
+      <img src= "images/Bobby.webp" alt="Bobby" class = "images">
+      <img src= "images/Bobby.webp" alt="Bobby" class = "images_1024">
+      <img src= "images/Bobby.webp" alt="Bobby" class = "images_600">
+      <p style = "margin: 1% 1%">Гендиректор Activision Blizzard Бобби Котик (Bobby Kotick) объявил о своём скором уходе ещё в октябре. 
+        Теперь же стала известна точная дата этого события — руководитель покинет свой пост 29 декабря. 
+        Кроме того, появились сведения о кадровых перестановках среди топ-менеджеров AB и Bethesda.</p>
+    </div>
+
+    <h3>Умер Джеймс Маккэффри — голос Макса Пейна</h3>
+    <div class="section_block">
+      <hr>
+      <img src= "images/DM.jpg" alt="James" class = "images">
+      <img src= "images/DM.jpg" alt="James" class = "images_1024">
+      <img src= "images/DM.jpg" alt="James" class = "images_600">
+      <p style = "margin: 1% 1%">На 65-м году жизни скончался актёр Джеймс Маккэффри (James McCaffrey). 
+        Причиной смерти стала множественная миелома — рак костного мозга. 
+        Новость в комментарии для издания TMZ подтвердил представитель артиста.</p>
+    </div>
+  </div>
 </div>
+,<script src="main.js"> </script>
 </body>
 
 </html>
