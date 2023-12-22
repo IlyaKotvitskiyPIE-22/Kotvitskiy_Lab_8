@@ -93,12 +93,14 @@
     }
 
     .content {
-        max-width: 100%;
-        max-height: 400px;
-        padding: 10px; 
-        border-radius: 10px;
-        background-color: rgb(51, 51, 51);
-        margin: 1% 1%;
+        border-radius: 25px;
+        background: rgb(51, 51, 51);
+        padding: 25px; 
+        width: 94%;
+        height: auto;  
+        position: absolute;
+        margin: 2% 1%;
+        top: 240%
     }
       
 
@@ -139,7 +141,7 @@
     background: rgb(51, 51, 51);
     padding: 25px; 
     width: 25%;
-    height: 755px;  
+    height: 126%;  
     position: absolute;
     margin: 2% 1%;
     }
@@ -193,12 +195,6 @@
     color: rgb(0, 0, 0);
     }
 
-    .container{
-        position: relative;
-        width: 100%;
-        height: auto;
-    }
-
     .images{
         margin: 1% 6%; 
         width: 33%; 
@@ -221,6 +217,11 @@
     }
 
     .section_block{
+        padding: 2% 5%;
+        background-color: rgb(71, 71, 71);
+        border-radius: 25px;
+        width: auto;
+        height: auto;
         display: flex;
         margin: 2% 0%;
     }
@@ -302,10 +303,10 @@
         font-family: Verdana;
         }
     
-        .navbarbutton_new:hover {
-        background-color: #ffffff;
-        color: rgb(0, 0, 0);
-        }
+    .navbarbutton_new:hover {
+    background-color: #ffffff;
+    color: rgb(0, 0, 0);
+    }
     
     .dropdown {
         float: left;
@@ -354,12 +355,16 @@
     }
 
     .content {
-        max-width: 100%;
-        max-height: 400px;
-        padding: 10px; 
-        border-radius: 10px;
-        background-color: rgb(51, 51, 51);
-        margin: 1% 1%;
+        border-radius: 25px;
+        background: rgb(51, 51, 51);
+        padding: 25px; 
+        width: 92%;
+        height: auto;  
+        position: absolute;
+        margin: 2% 1%;
+        display: flex;
+        top: 168%
+        
     }
 
     .navbar_menu {
@@ -400,7 +405,7 @@
     border-radius: 25px;
     background: rgb(51, 51, 51);
     padding: 25px; 
-    width: 90%;
+    width: 92%;
     height: auto;  
     position: absolute;
     margin: 2% 1%;
@@ -455,7 +460,7 @@
     }
 
     .images_1024{
-        margin: 1% 6%; 
+        margin: 1% 16%; 
         width: 66%; 
         height: 46%; 
         border-radius: 4px;
@@ -464,7 +469,23 @@
 
     .images_600{
         display: none;
-    }    
+    }
+    
+    .background_image{
+        width: 100%; 
+        height: 100%;
+    }
+
+    .section_block{
+        padding: 2% 5%;
+        background-color: rgb(71, 71, 71);
+        border-radius: 25px;
+        display: flex;
+        margin: 2% 0%;
+        width: auto;
+        height: auto;
+        flex-direction: column; 
+    }
 
     .images_block{
         display: flex;
@@ -577,11 +598,14 @@
     }
 
     .content {
-        max-width: 100%;
-        max-height: 400px; /* Максимальная высота блока */
-        padding: 10px; /* Добавление отступов внутри блока для улучшения внешнего вида */
-        border-radius: 10px;
-        margin: 1% 1%;
+        border-radius: 25px;
+        background: rgb(51, 51, 51);
+        padding: 25px; 
+        width: 84%;
+        height: auto;  
+        position: absolute;
+        margin: 2% 1%;
+        top: 230%
     }
 
     .navbarbutton {
@@ -622,7 +646,7 @@
     border-radius: 25px;
     background: rgb(51, 51, 51);
     padding: 25px; 
-    width: 90%;
+    width: 84%;
     height: auto;  
     position: absolute;
     margin: 2% 1%;
@@ -686,6 +710,21 @@
         height: 46%; 
         border-radius: 4px;
         display: flex;
+    }
+
+    .background_image{
+        width: 100%; 
+        height: 100%;
+    }
+
+    .section_block{
+        padding: 2% 5%;
+        background-color: rgb(71, 71, 71);
+        border-radius: 25px;
+        display: flex;
+        width: auto;
+        height: auto;
+        margin: 2% 0%;
     }
 
     .images_block{
